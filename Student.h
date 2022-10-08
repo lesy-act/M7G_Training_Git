@@ -13,7 +13,7 @@ public:
   double getGPA()const;
 private:
   std::string m_School;
-  double m_Gpa;
+  float m_Gpa;
 };
 
 #endif
