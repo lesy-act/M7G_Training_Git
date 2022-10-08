@@ -3,6 +3,8 @@
 #include <string>
 class Student {
 public:
+  static int cnt;
+public:
   Student();
   Student(std::string &School, int &Gpa);
   void setSchool(const std::string &schoolName);
@@ -13,4 +15,5 @@ private:
   std::string m_School;
   int m_Gpa;
 };
+
 #endif
