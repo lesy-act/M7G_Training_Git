@@ -4,13 +4,13 @@
 class Student {
 public:
   Student();
-  Student(std::string &School, double &Gpa);
+  Student(std::string &School, int &Gpa);
   void setSchool(const std::string &schoolName);
-  void setGpa(const double &Gpa);
+  void setGpa(const int &Gpa);
   std::string getSchool()const;
-  double getGPA()const;
+  int getGPA()const;
 private:
   std::string m_School;
-  double m_Gpa;
+  int m_Gpa;
 };
 #endif
