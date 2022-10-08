@@ -3,7 +3,7 @@ Student::Student()
 {
     cnt++;
 }
-Student::Student(std::string &School, double &Gpa):m_School(School),m_Gpa(Gpa)
+Student::Student(std::string &School, int &Gpa):m_School(School),m_Gpa(Gpa)
 {
 
 }
@@ -11,7 +11,7 @@ void Student::setSchool(const std::string &nameSchool)
 {
     m_School = nameSchool;
 }
-void Student::setGpa(const double &Gpa)
+void Student::setGpa(const int &Gpa)
 {
     m_Gpa = Gpa;
 }
@@ -19,7 +19,7 @@ std::string Student::getSchool()const
 {
     return m_School;
 }
-double Student::getGPA()const
+int Student::getGPA()const
 {
     return m_Gpa;
 }
