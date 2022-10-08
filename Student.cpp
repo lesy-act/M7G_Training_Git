@@ -1,7 +1,7 @@
 #include"Student.h"
 Student::Student()
 {
-
+    cnt++;
 }
 Student::Student(std::string &School, double &Gpa):m_School(School),m_Gpa(Gpa)
 {
@@ -23,3 +23,4 @@ double Student::getGPA()const
 {
     return m_Gpa;
 }
+int Student::cnt = 0;
